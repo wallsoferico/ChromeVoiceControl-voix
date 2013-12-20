@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>Chrome Voice Control Options</title>
+		<link rel="stylesheet" type="text/css" href="options.css" />
+	</head>
+	<body>
+		<div class="content">
+			<div class="menu">
+				<h1>CVC Options</h1>
+				<ul class="tabmenu">
+					<li id="websites"><a href="#websites">Website Shortcuts</a></li>
+					<li id="maps"><a href="#maps">Map Commands</a></li>
+					<li id="browser"><a href="#browser">Browser Commands</a></li>
+					<li id="custom"><a href="#custom">Custom Commands</a></li>
+					<li id="credits"><a href="#credits">Credits</a></li>
+				</ul>
+				<div class="separator"></div>
+				<div class="footer">
+					Website: <a href="http://voicecontrol.weebly.com">Chrome Voice Control</a><br />
+					Google+: <a href="https://plus.google.com/114771297846746199304/">egsDevelopment</a><br /><br />
+					If you have any problems please email me at <a href="mailto:egsDevelopment@gmail.com">egsDevelopment</a>
+				</div>
+			</div>
+			<div class="tabs">
+				<div id="websitesContent">
+					<h2>Website Shortcuts <span>(opens website in new tab)</span></h2>
+					<ul class="commands">
+						<li>Facebook</li>
+						<li>Google</li>
+						<li>Yahoo</li>
+						<li>Twitter</li>
+						<li>Flickr</li>
+						<li>MSN</li>
+						<li>Hotmail</li>
+						<li>Digg</li>
+					</ul>
+				</div>
+				<div id="mapsContent">
+					<h2>Map Commands <span>(please try and keep the listed format)</span></h2>
+					<ul class="commands">
+						<li>Map Of [location]</li>
+						<li>Get [thing] Near [location]</li>
+						<li>Get Directions From [start address] to [destination address]</li>
+					</ul>
+				</div>
+				<div id="browserContent">
+					<h2>Broswer Commands</h2>
+					<ul class="commands">
+						<li>open new tab / new tab</li>
+						<li>open new window / new window</li>
+						<li>open incognito window </li>
+						<li>open website in new tab [website name].com </li>
+						<li>open website in new window [website name].com </li>
+						<li>open tab in new window (will move current tab to a new window) </li>
+						<li>open settings / edit settings / open options / edit options</li>
+						<li>delete history</li>
+						<li>delete [website name] from history </li>
+						<li>launch [app or extension]</li>
+						<li>disable / enable [app or extension]</li>
+						<li>uninstall [app or extension]</li>
+						<li>[app] options page</li>
+						<li>store tab (pins current tab) </li>
+						<li>remove stored tab (unpins current tab) </li>
+						<li>close window</li>
+						<li>close tab</li>
+						<li>manage extensions</li>
+						<li>create new document / spreadsheet / presentation</li>
+					</ul>
+				</div>
+				<div id="customContent">
+					<h2>Create Custom Commands</h2>
+					<ul class="commands">
+						<li>Enter Website (ie: www.websitename.com): <input type="text" id="commandBox" size="50px"/></li>
+						<li>Enter Custom Alias: <input type="text" id="aliasBox" size="50px"/></li>
+						<li><input id="submitCommand" type="submit" value="Create Command" /></li>
+						<li><input id="clearCommands" type="submit" value="Clear All Commands" /></li>
+						<li>Sync Custom Commands Across Browsers:</li>
+						<li><label for="sync">Yes</label><input id="sync" type="radio" name="storage" /></li>
+						<li><label for="local">No</label><input id="local" type="radio" name="storage" /></li>
+					</ul>
+					<ul id="custCommands"></ul>
+				</div>
+				<div id="creditsContent">
+					<h2>Credits</h2>
+					<ul class="commands">
+						<li>Developed and Supported by Eric Shaw</li>
+						<li>Icon Created by Cristain</li>
+						<li>The Google Chrome Logo is a trademark of Google I have no association with them in any way</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="options.js"></script>
+	<script src="custCommands.js"></script>
+</html>
